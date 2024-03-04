@@ -1,0 +1,16 @@
+,Produto,Mês,Vendas
+0,Ar Frio,01-01-2023,100
+1,Ar Frio,01-02-2023,120
+2,Ar Frio,01-03-2023,130
+3,Ar Frio,01-04-2023,110
+4,Ar Frio,01-05-2023,150
+5,Ventilador,01-01-2023,150
+6,Ventilador,01-02-2023,140
+7,Ventilador,01-03-2023,160
+8,Ventilador,01-04-2023,130
+9,Ventilador,01-05-2023,170
+10,Ar Quente,01-01-2023,80
+11,Ar Quente,01-02-2023,90
+12,Ar Quente,01-03-2023,100
+13,Ar Quente,01-04-2023,85
+14,Ar Quente,01-05-2023,95
