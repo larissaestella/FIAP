@@ -1,0 +1,5 @@
+hivemq: https://www.hivemq.com/demos/websocket-client/
+
+tago.io: https://admin.tago.io/connectors
+
+wokwi: https://wokwi.com/
