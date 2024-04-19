@@ -220,6 +220,10 @@ main {
     gap: 0.4rem;
 }
 
+.preco-mobile{
+    display: none;
+}
+
 .accomodation-infos {
     padding-top: 1.5rem;
     display: grid;
@@ -889,6 +893,43 @@ footer a {
         width: 750px;
         overflow-x: scroll;
     }
+
+    .preco-mobile{
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        border: 0.2px solid rgba(36, 36, 36, 0.2);
+        bottom: 0;
+        padding: 1rem 1.5rem;
+        display: block;
+      }
+    
+      .preco-mobile p {
+        font-size: 1.2rem;
+      }
+    
+      .estrela_preco {
+        width: 0.8rem;
+      }
+    
+      .diponiPreco {
+        display: flex;
+      }
+    
+      .btn-preco-mobile {
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: #d90e41;
+        border: 0.5px solid #363636;
+        color: #fff;
+      }
+    
+      .preco-mobile-itens {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
 
     /* #footer.margem.flex.espaco {
         display: flex;
