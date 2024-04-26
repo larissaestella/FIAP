@@ -1,0 +1,44 @@
+@mixin zero-config($margin-param, $padding-param) {
+    margin: $margin-param;
+    padding: $padding-param;
+}
+
+@mixin div-size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin div-style($bgColor: purple){
+    background-color: $bgColor;
+}
+
+@mixin flex-config($direction, $justify, $align-item){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align-item;
+}
+
+@mixin relative-center(){
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+body {
+    @include zero-config(0, 0);
+}
+
+.container {
+    @include div-size(80%, 100vh);
+    @include div-style(#e7e7e7);
+    margin: 0 auto;
+    // background-color: #e7e7e7;
+
+    .box {
+        @include div-size(300px, 200px);
+        @include div-style();
+        @include relative-center
+    }
+}
