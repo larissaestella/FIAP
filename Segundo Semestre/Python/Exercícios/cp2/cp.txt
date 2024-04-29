@@ -1,0 +1,115 @@
+#Exercicio 1 - Cálculo de Desempenho de Funcionários
+
+def calcular_media_desempenho(notas):
+    notas_validas = list(filter(lambda nota: nota >= 0, notas))
+    media_desempenho = sum(notas_validas) / len(notas_validas)
+    return media_desempenho
+notas_funcionario1 = [8, 7, 6, -2, 9]
+notas_funcionario2 = [6, 5, 7, 8, 7]
+
+media_funcionario1 = calcular_media_desempenho(notas_funcionario1)
+media_funcionario2 = calcular_media_desempenho(notas_funcionario2)
+print("Média do Funcionário 1:", media_funcionario1)
+print("Média do Funcionário 2:", media_funcionario2) 
+
+********************************************************************
+# Exercício 2 - Classificação de Produtos 
+
+def calcular_media_preco_por_categoria(produtos):
+    categorias = {}
+    for produto in produtos:
+        categoria = produto['categoria']
+        preco = produto['preco']
+        if categoria in categorias:
+            categorias[categoria].append(preco)
+        else:
+            categorias[categoria] = [preco]
+    media_por_categoria = {categoria: sum(preco) / len(preco) for categoria, preco in categorias.items()}
+    return media_por_categoria
+produtos = [
+    {'nome': 'Camiseta', 'categoria': 'Roupas', 'preco': 29.99},
+    {'nome': 'Calça', 'categoria': 'Roupas', 'preco': 49.99},
+    {'nome': 'Tênis', 'categoria': 'Calçados', 'preco': 99.99},
+    {'nome': 'Meia', 'categoria': 'Acessórios', 'preco': 9.99},
+    {'nome': 'Boné', 'categoria': 'Acessórios', 'preco': 19.99}
+]
+media_preco_por_categoria = calcular_media_preco_por_categoria(produtos)
+print(media_preco_por_categoria)
+
+
+********************************************************************
+# Exercício 3 - Análise de Texto
+
+def analise_texto(textos):
+    palavras_comuns = ["o", "a", "de", "e", "para", "com"] # Palavras comuns a serem removidas
+    frequencia_palavras = {}
+    for texto in textos:
+        palavras = texto.split()  # Separar as palavras de cada frase
+        for palavra in palavras:
+            palavra = palavra.lower()
+            if palavra not in palavras_comuns: # Remover palavras comuns
+                if palavra in frequencia_palavras: # Contar a frequência de cada palavra
+                    frequencia_palavras[palavra] += 1
+                else:
+                    frequencia_palavras[palavra] = 1
+    return frequencia_palavras
+textos = [
+    "O tempo está agradável para passear e curtir.",
+    "O parque é um ótimo lugar para curtir.",
+    "As pessoas gostam de passear no parque com o tempo agradável."
+]
+frequencia = analise_texto(textos)
+print(frequencia)
+********************************************************************
+# Exercício 4 - Simulação de Estoque 
+
+def simular_estoque(vendas, reposicoes, estoque_inicial):
+   estoque_atual = estoque_inicial
+   for mes, venda, reposicao in zip(range(1, len(vendas) + 1), vendas, reposicoes):
+       estoque_atual -= venda
+       estoque_atual += reposicao
+       print(f"Mês {mes}:")
+       print(f"Vendas: {venda}")
+       print(f"Reposições: {reposicao}")
+       print(f"Estoque final: {estoque_atual}\n")
+   return estoque_atual
+
+vendas = [10, 15, 8, 12]  # Lista de vendas
+reposicoes = [5, 7, 6, 5]  # Lista de reposições
+estoque_inicial = 100  # Estoque inicial
+estoque_final = simular_estoque(vendas, reposicoes, estoque_inicial)
+print(f"Estoque final: {estoque_final}")
+
+********************************************************************
+# Exercício 5 - Estimativa de Despesas
+
+def calcular_media_despesas(categorias):
+   media_despesas = {categoria: (lambda valores: sum(valores) / len(valores))(valores) for categoria, valores in categorias.items()}
+   return media_despesas
+categorias = {
+   'salarios': [5000, 5500, 6000, 5800],
+   'aluguel': [1500, 1500, 1600, 1600],
+   'fornecedores': [2000, 2200, 2300, 2100]
+}
+media_por_categoria = calcular_media_despesas(categorias)
+print(media_por_categoria)
+********************************************************************
+# Exercício 6 - Raizes Quadraticas
+
+def calcular_raizes_quadraticas(a, b, c):
+    discriminante = b**2 - 4*a*c
+    raiz_discriminante = discriminante**0.5
+    calcular_x1_x2 = lambda a, b, c, raiz_discriminante: (
+        (-b + raiz_discriminante) / (2*a),
+        (-b - raiz_discriminante) / (2*a)
+    )
+    return calcular_x1_x2(a, b, c, raiz_discriminante)
+raizes = calcular_raizes_quadraticas(1, -3, 2)
+print("Raiz x1:", raizes[0])
+print("Raiz x2:", raizes[1])
+********************************************************************
+a) correto
+b) correto
+c) incorreto
+d) incorreto
+e) correto
