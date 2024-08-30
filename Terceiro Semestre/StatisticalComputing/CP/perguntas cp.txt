@@ -1,0 +1,43 @@
+# Checkpoint 1 - Data Science and Statistical Computing
+Considere os notebooks dados nas últimas aulas, em especial, o que contém o estudo de caso de produtividades de mão de obra na construção civil.
+Reveja as aulas dadas e as videoaulas recomendadas de lição de casa.
+Junte um grupo com até 4 integrantes e elabore um "relatório" abaixo, mesclando respostas e códigos para os questionamentos à seguir.
+Entrega via Teams até 03/09 às 09h(2ESPB) e às 11h(2ESPA).
+**Considere os dados do estudo de caso de construção civil**.
+
+
+## **Tipos de Variáveis**
+### 1 - Crie um código que importa os dados e, ao importá-los analise suas colunas comentando sobre o tipo de variável de cada uma.
+
+
+
+### 2 - Estatística é sobre "responder perguntas com dados", se coloque no lugar do gestor da construtora: com esses dados de produtividade de equipes em 3 obras diferentes, que tipo
+de perguntas poderíamos responder com esses dados (liste as que conseguir pensar)?
+(obs: sei que usar GPT hoje é "fácil" pra responder essa pergunta, mas darei um pontinho a mais pela originalidade e, principalmente, se você escrever com suas próprias palavras e
+realmente fizer sentido pra você).
+
+
+## **Medidas de Posição Central, Gráfico de Densidade de Frequência e Boxplot**
+### 3 - Utilize tudo que aprendeu sobre medidas de posição central, gráfico de densidade de frequência e boxplot para responder a seguinte pergunta: Há diferença de produtividade 
+entre obras? Se há, qual obra mais produtiva? Qual menos produtiva? Consegue pensar em motivos para esses comportamentos?
+(obs: cabe checar a caracterização das obras para pensar nos motivos...)
+
+
+### 4 - Utilize tudo que aprendeu sobre medidas de posição central, gráfico de densidade de frequência e boxplot para responder a seguinte pergunta: Há diferença de produtividade 
+entre blocos (coluna descrição)? Se há, qual bloco é mais produtivo? Qual menos produtivo? Consegue pensar em motivos para esses comportamentos?
+(obs: aqui, nos motivos, ganha ponto a mais pela busca por referências que sustentem sua argumentação)
+
+
+### 5 - Nas duas respostas anteriores, como estava a relação entre média e mediana? Estavam próximas, afastadas? Comente sobre a possibilidade de outliers no grupo de dados.
+(obs: utilize o gráfico de boxplot para embasar sua argumentação).
+
+
+### 6 - Qual dos blocos tem produtividade mais previsível? Qual tem produtividade menos previsível?
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 7 - Questão Extra (vale até 2 questões erradas acima, só para os fortes): Assista o vídeo https://www.youtube.com/watch?v=KRZzUFTmpwU (a partir do 16min36) e tome notas do que 
+ficar com dúvida e exponha no seu notebook abaixo. Veja se consegue entender e explique com suas palavras como é feito o cálculo de um coeficiente sugerido à tabela de orçamentos da SIURB.
+
+### 8 - Questão Extra parte 2 (vale meia questão errada): Comente o que está achando da disciplina, onde não ficou claro algum conceito, onde está mais interessante. Feedback sincero,
+construtivo. A ideia é sempre trazer o melhor e mais completo conteúdo pra vocês =)
