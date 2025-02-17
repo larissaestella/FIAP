@@ -1,0 +1,24 @@
+package colecoes;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TesteLista {
+
+	public static void main(String[] args) {
+		
+		List<String> lista = new ArrayList<String>();
+		lista.add("Teste 1");
+		lista.add("Teste 2");
+		
+		for(String texto : lista) {
+			System.out.println(texto);
+		}
+		
+		for (int i = 0; i<lista.size();i++) {
+			
+		}
+
+	}
+
+}
